@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة الاخوه المتحدون للخدمات البيئية | elakhwa elmothadon Environmental Services</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            850: '#064e3b',
+                            900: '#022c22',
+                            950: '#011812',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        lime: {
+                            400: '#a3e635',
+                            500: '#84cc16',
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #011812;
+            color: #f3f4f6;
+        }
+        .bg-glass {
+            background: rgba(6, 78, 59, 0.45);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .bg-glass-card {
+            background: rgba(15, 30, 25, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(163, 230, 53, 0.15);
+        }
+        .bg-glass-card:hover {
+            border-color: rgba(163, 230, 53, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(132, 204, 22, 0.2);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f59e0b 0%, #a3e635 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-gradient {
+            background: linear-gradient(135deg, #84cc16 0%, #059669 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-gradient:hover {
+            background: linear-gradient(135deg, #a3e635 0%, #10b981 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(132, 204, 22, 0.4);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #011812;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #059669;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #84cc16;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden selection:bg-lime-500 selection:text-emerald-950">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-900 text-xs sm:text-sm py-2 px-4 border-b border-emerald-700/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5 text-lime-400 font-semibold">
+                    <i class="fa-solid fa-shield-halved">
+</i> شركة معتمدة من جهاز تنظيم إدارة المخلفات - وزارة البيئة
+                </span>
+                <span class="hidden md:inline text-emerald-300">|</span>
+                <span class="hidden md:flex items-center gap-1.5 text-emerald-200">
+                    <i class="fa-solid fa-location-dot text-gold-400">
+</i> الشرقية - بلبيس - بجوار شركة سيكم للأعشاب
+                </span>
+            </div>
+            <div class="flex items-center gap-4 text-emerald-200">
+                <a href="tel:+201289171593" class="hover:text-lime-400 transition-colors flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-lime-400">
+</i> 01289171593
+                </a>
+                <a href="https://wa.me/201289171593" target="_blank" class="hover:text-lime-400 transition-colors flex items-center gap-1">
+                    <i class="fa-brands fa-whatsapp text-lime-400">
+</i> واتساب
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-glass border-b border-emerald-800/50 shadow-2xl transition-all duration-300" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-lime-400 to-emerald-600 flex items-center justify-center text-emerald-950 font-black text-2xl shadow-lg shadow-lime-500/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-recycle">
+</i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-black tracking-wide text-white group-hover:text-lime-400 transition-colors">مؤسسة الاخوه المتحدون للخدمات البيئية</span>
+                        <span class="text-xs text-emerald-400 font-medium tracking-wider">ELAKHWA ELMOTHADON ENVIRONMENTAL SERVICES</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <div class="hidden lg:flex items-center gap-1 xl:gap-2 font-semibold text-sm">
+                    <a href="#hero" class="px-3 py-2 text-lime-400 hover:text-white transition-colors">الرئيسية</a>
+                    <a href="#about" class="px-3 py-2 text-emerald-100 hover:text-lime-400 transition-colors">من نحن</a>
+                    <a href="#services" class="px-3 py-2 text-emerald-100 hover:text-lime-400 transition-colors">خدماتنا</a>
+                    <a href="#calculator" class="px-3 py-2 text-emerald-100 hover:text-lime-400 transition-colors">حاسبة الأثر</a>
+                    <a href="#gallery" class="px-3 py-2 text-emerald-100 hover:text-lime-400 transition-colors">معرض أعمالنا</a>
+                    <a href="#timeline" class="px-3 py-2 text-emerald-100 hover:text-lime-400 transition-colors">مسيرتنا</a>
+                    <a href="#why-us" class="px-3 py-2 text-emerald-100 hover:text-lime-400 transition-colors">لماذا نحن؟</a>
+                    <a href="#contact" class="px-3 py-2 text-emerald-100 hover:text-lime-400 transition-colors">اتصل بنا</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:block">
+                    <a href="#contact" class="btn-gradient text-emerald-950 font-bold px-6 py-2.5 rounded-full shadow-lg flex items-center gap-2">
+                        <span>احصل على تسعيرة</span>
+                        <i class="fa-solid fa-arrow-left text-xs">
+</i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-btn" class="p-2 rounded-lg bg-emerald-900/80 text-emerald-200 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon">
+</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-emerald-950/95 border-b border-emerald-800 px-4 pt-2 pb-6 space-y-2 font-semibold">
+            <a href="#hero" class="mobile-link block px-3 py-2 rounded-md text-lime-400 bg-emerald-900/50">الرئيسية</a>
+            <a href="#about" class="mobile-link block px-3 py-2 rounded-md text-emerald-100 hover:bg-emerald-900/30">من نحن</a>
+            <a href="#services" class="mobile-link block px-3 py-2 rounded-md text-emerald-100 hover:bg-emerald-900/30">خدماتنا</a>
+            <a href="#calculator" class="mobile-link block px-3 py-2 rounded-md text-emerald-100 hover:bg-emerald-900/30">حاسبة الأثر</a>
+            <a href="#gallery" class="mobile-link block px-3 py-2 rounded-md text-emerald-100 hover:bg-emerald-900/30">معرض أعمالنا</a>
+            <a href="#timeline" class="mobile-link block px-3 py-2 rounded-md text-emerald-100 hover:bg-emerald-900/30">مسيرتنا</a>
+            <a href="#why-us" class="mobile-link block px-3 py-2 rounded-md text-emerald-100 hover:bg-emerald-900/30">لماذا نحن؟</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 rounded-md text-emerald-100 hover:bg-emerald-900/30">اتصل بنا</a>
+            <a href="#contact" class="mobile-link block w-full text-center mt-4 btn-gradient text-emerald-950 font-bold px-6 py-3 rounded-xl">احصل على تسعيرة</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden">
+        <!-- Background Lighting Effects -->
+        <div class="absolute top-1/4 right-10 w-96 h-96 bg-lime-500/10 rounded-full blur-3xl pointer-events-none">
+</div>
+        <div class="absolute bottom-10 left-10 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none">
+</div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-right">
+                    
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-900/80 border border-lime-500/30 text-lime-400 font-semibold text-xs sm:text-sm">
+                        <i class="fa-solid fa-award text-gold-400">
+</i>
+                        <span>ترخيص معتمد من وزارة البيئة وهيئة التنمية الصناعية</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
+                        نحمي البيئة.. <br>
+                        <span class="gold-gradient-text">ونصنع المستقبل بإعادة التدوير</span>
+                    </h1>
+
+                    <p class="text-emerald-200/90 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        شركة "الاخوه المتحدون للخدمات البيئية" شريكك الموثوق في إدارة والتخلص الآمن من المخلفات الصناعية والخطرة، والكبس، وإعادة تدوير البلاستيك والورق والكرتون وفق أحدث المعايير البيئية والدولية.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#services" class="btn-gradient text-emerald-950 font-extrabold px-8 py-3.5 rounded-xl text-lg shadow-xl shadow-lime-500/10 flex items-center gap-3">
+                            <span>اكتشف خدماتنا</span>
+                            <i class="fa-solid fa-arrow-left">
+</i>
+                        </a>
+                        <a href="#contact" class="px-8 py-3.5 rounded-xl border-2 border-emerald-600 hover:border-lime-400 text-emerald-100 hover:text-lime-400 font-bold transition-all bg-emerald-950/40">
+                            <i class="fa-solid fa-phone-volume ml-2 text-gold-400">
+</i> تواصل معنا
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Badges -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-emerald-800/60 mt-8">
+                        <div class="p-3 rounded-xl bg-emerald-900/30 border border-emerald-800/50 text-center">
+                            <div class="text-2xl sm:text-3xl font-black text-lime-400">+300,000</div>
+                            <div class="text-xs sm:text-sm text-emerald-300">طن تم تدويره</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-emerald-900/30 border border-emerald-800/50 text-center">
+                            <div class="text-2xl sm:text-3xl font-black text-gold-400">+1050</div>
+                            <div class="text-xs sm:text-sm text-emerald-300">شريك نجاح</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-emerald-900/30 border border-emerald-800/50 text-center">
+                            <div class="text-2xl sm:text-3xl font-black text-lime-400">+19</div>
+                            <div class="text-xs sm:text-sm text-emerald-300">عاماً من الخبرة</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hero Image / Visual Box -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-lime-500 to-emerald-600 opacity-30 blur-xl">
+</div>
+                        <div class="relative rounded-2xl overflow-hidden border border-emerald-600/40 bg-emerald-900 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=800" alt="Recycling Facility" class="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/800x600/064e3b/ffffff?text=Elakhwa Elmothadon+Environmental+Services'">
+                            
+                            <!-- Floating Card -->
+                            <div class="absolute bottom-4 right-4 left-4 bg-glass p-4 rounded-xl border border-emerald-500/30 flex items-center gap-4 shadow-xl">
+                                <div class="w-12 h-12 rounded-lg bg-lime-500/20 text-lime-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-truck-ramp-box">
+</i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">أسطول نقل حديث ومجهز</h4>
+                                    <p class="text-xs text-emerald-200">خدمة تجميع ونقل فورية لجميع المحافظات</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="py-20 bg-emerald-950/60 border-y border-emerald-800/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&q=80&w=500" class="rounded-2xl border border-emerald-700/50 object-cover h-64 w-full shadow-lg" alt="Recycling process" onerror="this.src='https://placehold.co/500x500/064e3b/ffffff?text=Recycling'">
+                        <img src="https://images.unsplash.com/photo-1595278069441-2cf29f8005a4?auto=format&fit=crop&q=80&w=500" class="rounded-2xl border border-emerald-700/50 object-cover h-64 w-full shadow-lg mt-8" alt="Green Energy" onerror="this.src='https://placehold.co/500x500/022c22/ffffff?text=Green+Future'">
+                    </div>
+                    <!-- Badge Overlay -->
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-emerald-900 border-2 border-gold-500 p-4 rounded-2xl shadow-2xl text-center">
+                        <i class="fa-solid fa-certificate text-gold-400 text-3xl mb-1">
+</i>
+                        <div class="text-xs font-bold text-white">مرخص رسمياً</div>
+                        <div class="text-[10px] text-emerald-300">من جميع الجهات الحكومية</div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-md bg-lime-500/10 text-lime-400 font-bold text-sm border border-lime-500/20">
+                        عن الشركة
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        ريادة متكاملة في إدارة المخلفات وخدمات البيئة
+                    </h2>
+                    <p class="text-emerald-200 leading-relaxed">
+                        تعد مؤسسة <strong class="text-white"> الاخوه المتحدون للخدمات البيئية</strong> من الشركات المتقدمة والرائدة في مصر في مجال جمع، وفرز، وكبس، وتدوير المخلفات الصناعية والصلبة، والتخلص الآمن من مياه الصرف الصناعي والمنتجات التالفة.
+                    </p>
+                    
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-900 border border-lime-500/30 flex items-center justify-center text-lime-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-scale-balanced">
+</i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white">ميزان بيسكول معتمد ورسمي</h3>
+                                <p class="text-xs text-emerald-300">نوفر أقصى درجات الشفافية والدقة في الوزن عبر ميزان بسكول إلكتروني معتمد داخل المقر.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-900 border border-lime-500/30 flex items-center justify-center text-lime-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-user-shield">
+</i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white">السرية والأمان التام</h3>
+                                <p class="text-xs text-emerald-300">إعدام وتدمير المنتجات غير المطابقة للمواصفات مع تقديم شهادات إتلاف رسمية وموثقة بالفيديو.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-900 border border-lime-500/30 flex items-center justify-center text-lime-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-leaf">
+</i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white">التزام تام بمعايير التنمية المستدامة</h3>
+                                <p class="text-xs text-emerald-300">نساعد شركاءنا من المصانع والشركات على تحقيق متطلبات الاستدامة وخفض البصمة الكربونية.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3 py-1 rounded-md bg-lime-500/10 text-lime-400 font-bold text-sm border border-lime-500/20">خدماتنا الشاملة</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-white mt-3 mb-4">حلول بيئية متكاملة للمصانع والشركات</h2>
+                <p class="text-emerald-300">نقدم مجموعة واسعة من الخدمات المعتمدة بيئياً لتلبية احتياجات كافة القطاعات الصناعية والتجارية</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-glass-card rounded-2xl p-8 transition-all duration-300 relative group overflow-hidden">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-lime-400 to-emerald-600 flex items-center justify-center text-emerald-950 text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-boxes-packing">
+</i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-lime-400 transition-colors">إعادة تدوير البلاستيك والورق</h3>
+                    <p class="text-emerald-200/80 text-sm leading-relaxed mb-4">فرز وتجهيز وكبس جميع أنواع البلاستيك (PET, HDPE, PP) والكرتون والورق لإعادة استخدامها في الصناعة بكفاءة عالية.</p>
+                    <ul class="text-xs text-emerald-400 space-y-2 border-t border-emerald-800/60 pt-4">
+                        <li><i class="fa-solid fa-check text-lime-400 ml-1">
+</i> كبس هيدروليكي عالي الكثافة</li>
+                        <li><i class="fa-solid fa-check text-lime-400 ml-1">
+</i> توريد خامات صناعية نقية</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-glass-card rounded-2xl p-8 transition-all duration-300 relative group overflow-hidden">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-lime-400 to-emerald-600 flex items-center justify-center text-emerald-950 text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-industry">
+</i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-lime-400 transition-colors">إدارة المخلفات الصناعية</h3>
+                    <p class="text-emerald-200/80 text-sm leading-relaxed mb-4">إدارة موقعية كاملة لمخلفات المصانع، بدءاً من الفرز في موقع العميل وتوفير العمالة والحاويات وحتى النقل والتخلص النهائى.</p>
+                    <ul class="text-xs text-emerald-400 space-y-2 border-t border-emerald-800/60 pt-4">
+                        <li><i class="fa-solid fa-check text-lime-400 ml-1">
+</i> عقود سنوية للمصانع</li>
+                        <li><i class="fa-solid fa-check text-lime-400 ml-1">
+</i> تقارير استدامة دورية</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-glass-card rounded-2xl p-8 transition-all duration-300 relative group overflow-hidden">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-lime-400 to-emerald-600 flex items-center justify-center text-emerald-950 text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-truck-moving">
+</i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-lime-400 transition-colors">تجميع ونقل النفايات والكرتون</h3>
+                    <p class="text-emerald-200/80 text-sm leading-relaxed mb-4">أسطول مجهز من الشاحنات بمختلف الحمولات لتجميع ونقل الكرتون والنفايات التجارية والصناعية وفق الجداول المحددة.</p>
+                    <ul class="text-xs text-emerald-400 space-y-2 border-t border-emerald-800/60 pt-4">
+                        <li><i class="fa-solid fa-check text-lime-400 ml-1">
+</i> نقل سريع ومأمون</li>
+                        <li><i class="fa-solid fa-check text-lime-400 ml-1">
+</i> التزام تام بالمواعيد</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-glass-card rounded-2xl p-8 transition-all duration-300 relative group overflow-hidden">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-lime-400 to-emerald-600 flex items-center justify-center text-emerald-950 text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-file-circle-xmark">
+</i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-lime-400 transition-colors">إعدام وتدمير المواد التالفة والمستندات</h3>
+                    <p class="text-emerald-200/80 text-sm leading-relaxed mb-4">تدمير ميكانيكي كامل ومحمي للمستندات السرية، الأوراق الرسمية، المنتجات المنتهية الصلاحية مع تقديم وثائق وفيديوهات إتلاف.</p>
+                    <ul class="text-xs text-emerald-400 space-y-2 border-t border-emerald-800/60 pt-4">
+                        <li><i class="fa-solid fa-check text-lime-400 ml-1">
+</i> شهادة إتلاف رسمية معتمدة</li>
+                        <li><i class="fa-solid fa-check text-lime-400 ml-1">
+</i> توثيق مرئي بالكامل</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-glass-card rounded-2xl p-8 transition-all duration-300 relative group overflow-hidden">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-lime-400 to-emerald-600 flex items-center justify-center text-emerald-950 text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-biohazard">
+</i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-lime-400 transition-colors">المخلفات الخطرة والطبية</h3>
+                    <p class="text-emerald-200/80 text-sm leading-relaxed mb-4">خدمات استشارية وترتيب نقل آمن للمخلفات الخطرة إلى المدافن والمعامل المعتمدة من وزارة البيئة وفق القانون رقم 202 لسنة 2020.</p>
+                    <ul class="text-xs text-emerald-400 space-y-2 border-t border-emerald-800/60 pt-4">
+                        <li><i class="fa-solid fa-check text-lime-400 ml-1">
+</i> نماذج تتبع متوافقة بيئياً</li>
+                        <li><i class="fa-solid fa-check text-lime-400 ml-1">
+</i> معايير السلامة المهنية</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-glass-card rounded-2xl p-8 transition-all duration-300 relative group overflow-hidden">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-lime-400 to-emerald-600 flex items-center justify-center text-emerald-950 text-2xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hand-holding-dollar">
+</i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-lime-400 transition-colors">شراء المخلفات بأسعار تنافسية</h3>
+                    <p class="text-emerald-200/80 text-sm leading-relaxed mb-4">نشتري كافة كميات السكراب، البلاستيك، الخشب، والكرتون من المصانع والشركات بأفضل وأعلى سعر في السوق المصري مع الدفع الفوري.</p>
+                    <ul class="text-xs text-emerald-400 space-y-2 border-t border-emerald-800/60 pt-4">
+                        <li><i class="fa-solid fa-check text-lime-400 ml-1">
+</i> تسعير عادل ودفع كاش</li>
+                        <li><i class="fa-solid fa-check text-lime-400 ml-1">
+</i> وزن دقيق بميزان البسكول</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE RECYCLING IMPACT CALCULATOR -->
+    <section id="calculator" class="py-20 bg-gradient-to-b from-emerald-950 via-emerald-900 to-emerald-950 relative border-y border-emerald-800/50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="px-3 py-1 rounded-md bg-gold-500/10 text-gold-400 font-bold text-sm border border-gold-500/20">أداة تفاعلية</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white mt-2">حاسبة الأثر البيئي للتسليمات</h2>
+                <p class="text-emerald-200 text-sm mt-2">احسب كمية الكربون الموفرة والأشجار المخفورة عند إعادة تدوير مخلفاتك مع الاخوه المتحدون </p>
+            </div>
+
+            <div class="bg-glass-card rounded-3xl p-6 sm:p-10 border border-lime-500/30 shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <!-- Controls -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <div>
+                            <label class="block text-emerald-200 text-sm font-bold mb-2">نوع المادة للتدوير:</label>
+                            <select id="calc-material" class="w-full bg-emerald-950 border border-emerald-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-lime-400 font-semibold">
+                                <option value="paper">ورق وكرتون (Paper & Cardboard)</option>
+                                <option value="plastic">بلاستيك متنوع (Plastics)</option>
+                                <option value="scrap">مخلفات صناعية ومعادن (Scrap & Industrial)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label class="text-emerald-200 text-sm font-bold">الوزن بالكيلوجرام (كجم):</label>
+                                <span id="weight-display" class="text-lime-400 font-extrabold text-lg">1,000 كجم</span>
+                            </div>
+                            <input type="range" id="calc-weight" min="100" max="50000" step="100" value="1000" class="w-full h-2 bg-emerald-900 rounded-lg appearance-none cursor-pointer accent-lime-400">
+                            <div class="flex justify-between text-xs text-emerald-400 mt-1">
+                                <span>100 كجم</span>
+                                <span>25 طن</span>
+                                <span>50 طن</span>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-emerald-900/40 border border-emerald-800 text-xs text-emerald-300 flex items-center gap-3">
+                            <i class="fa-solid fa-circle-info text-lime-400 text-lg">
+</i>
+                            <span>تعتمد هذه الحسابات على المؤشرات العالمية القياسية لخفض الانبعاثات الكربونية الناتجة عن التدوير.</span>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Results Panel -->
+                    <div class="lg:col-span-6 bg-emerald-950/80 rounded-2xl p-6 border border-emerald-700/60 space-y-6 text-center">
+                        <h3 class="text-lg font-bold text-emerald-200 border-b border-emerald-800 pb-3">الأثر البيئي المباشر المقدر:</h3>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-emerald-900/50 p-4 rounded-xl border border-lime-500/20">
+                                <i class="fa-solid fa-cloud-arrow-down text-lime-400 text-2xl mb-2">
+</i>
+                                <div id="co2-result" class="text-2xl sm:text-3xl font-black text-white">1,500</div>
+                                <div class="text-xs text-emerald-300 font-semibold">كجم CO2 مقتطعة</div>
+                            </div>
+
+                            <div class="bg-emerald-900/50 p-4 rounded-xl border border-lime-500/20">
+                                <i class="fa-solid fa-tree text-emerald-400 text-2xl mb-2">
+</i>
+                                <div id="trees-result" class="text-2xl sm:text-3xl font-black text-lime-400">25</div>
+                                <div class="text-xs text-emerald-300 font-semibold">شجرة تم إنقاذها</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-emerald-900/30 p-4 rounded-xl border border-emerald-800">
+                            <div class="text-xs text-emerald-300 mb-1">توفير في استهلاك الطاقة المقابل:</div>
+                            <div id="energy-result" class="text-lg font-bold text-gold-400">4,000 كيلوواط/ساعة</div>
+                        </div>
+
+                        <a href="#contact" class="block w-full btn-gradient text-emerald-950 font-extrabold py-3 rounded-xl transition-transform hover:scale-[1.02]">
+                            ساهم في حماية البيئة وتواصل معنا الآن
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WORK GALLERY SECTION -->
+    <section id="gallery" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="px-3 py-1 rounded-md bg-lime-500/10 text-lime-400 font-bold text-sm border border-lime-500/20">معرض الأعمال</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-white mt-2">صور من مواقع العمل والعمليات</h2>
+                <p class="text-emerald-300 mt-2">استكشف ساحاتنا، عمليات الكبس والفرز، وأسطول السيارات المجهز</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
+                <button class="filter-btn active px-5 py-2 rounded-full font-bold text-sm bg-lime-500 text-emerald-950 transition-all" data-filter="all">الكل</button>
+                <button class="filter-btn px-5 py-2 rounded-full font-bold text-sm bg-emerald-900/60 text-emerald-200 hover:bg-emerald-800 transition-all border border-emerald-700/50" data-filter="press">كبس وفرز</button>
+                <button class="filter-btn px-5 py-2 rounded-full font-bold text-sm bg-emerald-900/60 text-emerald-200 hover:bg-emerald-800 transition-all border border-emerald-700/50" data-filter="fleet">أسطول السيارات</button>
+                <button class="filter-btn px-5 py-2 rounded-full font-bold text-sm bg-emerald-900/60 text-emerald-200 hover:bg-emerald-800 transition-all border border-emerald-700/50" data-filter="yard">الساحة والعمليات</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item press relative rounded-2xl overflow-hidden border border-emerald-800 group h-64 bg-emerald-900">
+                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=600" alt="Baling Press" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/064e3b/ffffff?text=Baling+Press'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+</div>
+                    <div class="absolute bottom-4 right-4 left-4">
+                        <span class="text-xs font-bold text-lime-400 uppercase tracking-wider">كبس وفرز</span>
+                        <h4 class="text-lg font-bold text-white">مكابس الورق والكرتون الهيدروليكية</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item fleet relative rounded-2xl overflow-hidden border border-emerald-800 group h-64 bg-emerald-900">
+                    <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=600" alt="Truck Fleet" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/022c22/ffffff?text=Fleet'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+</div>
+                    <div class="absolute bottom-4 right-4 left-4">
+                        <span class="text-xs font-bold text-lime-400 uppercase tracking-wider">أسطول السيارات</span>
+                        <h4 class="text-lg font-bold text-white">شاحنات النقل الثقيل المجهزة</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item yard relative rounded-2xl overflow-hidden border border-emerald-800 group h-64 bg-emerald-900">
+                    <img src="https://images.unsplash.com/photo-1595278069441-2cf29f8005a4?auto=format&fit=crop&q=80&w=600" alt="Recycling Yard" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/064e3b/ffffff?text=Recycling+Yard'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+</div>
+                    <div class="absolute bottom-4 right-4 left-4">
+                        <span class="text-xs font-bold text-lime-400 uppercase tracking-wider">الساحة والعمليات</span>
+                        <h4 class="text-lg font-bold text-white">ساحة الفرز والتخزين ببلبيس</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item press relative rounded-2xl overflow-hidden border border-emerald-800 group h-64 bg-emerald-900">
+                    <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&q=80&w=600" alt="Plastic Bales" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/022c22/ffffff?text=Plastic+Recycling'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+</div>
+                    <div class="absolute bottom-4 right-4 left-4">
+                        <span class="text-xs font-bold text-lime-400 uppercase tracking-wider">كبس وفرز</span>
+                        <h4 class="text-lg font-bold text-white">فرز البلاستيك وإعداده لإعادة التدوير</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item fleet relative rounded-2xl overflow-hidden border border-emerald-800 group h-64 bg-emerald-900">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=600" alt="Logistics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/064e3b/ffffff?text=Logistics'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+</div>
+                    <div class="absolute bottom-4 right-4 left-4">
+                        <span class="text-xs font-bold text-lime-400 uppercase tracking-wider">أسطول السيارات</span>
+                        <h4 class="text-lg font-bold text-white">عمليات التحميل والتفريغ بالموقع</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item yard relative rounded-2xl overflow-hidden border border-emerald-800 group h-64 bg-emerald-900">
+                    <img src="https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?auto=format&fit=crop&q=80&w=600" alt="Scale Facility" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/022c22/ffffff?text=Weighing+Scale'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+</div>
+                    <div class="absolute bottom-4 right-4 left-4">
+                        <span class="text-xs font-bold text-lime-400 uppercase tracking-wider">الساحة والعمليات</span>
+                        <h4 class="text-lg font-bold text-white">ميزان بسكول معتمد للكميات الكبيرة</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE SECTION (HISTORY) -->
+    <section id="timeline" class="py-20 bg-emerald-950/70 border-y border-emerald-800/40 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="px-3 py-1 rounded-md bg-gold-500/10 text-gold-400 font-bold text-sm border border-gold-500/20">مسيرتنا</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-white mt-2">مراحل التطور والتميز عبر السنوات</h2>
+            </div>
+
+            <div class="relative border-r-2 border-emerald-700/60 space-y-12 mr-4 md:mr-1/2">
+                
+                <!-- Milestone 1 -->
+                <div class="relative pr-8 md:pr-10">
+                    <div class="absolute -right-3 top-1 w-6 h-6 rounded-full bg-lime-400 border-4 border-emerald-950 shadow-lg shadow-lime-400/50">
+</div>
+                    <div class="bg-glass-card p-6 rounded-2xl">
+                        <span class="text-gold-400 font-black text-xl mb-1 block">2007</span>
+                        <h3 class="text-lg font-bold text-white mb-2">التأسيس والانطلاقة</h3>
+                        <p class="text-emerald-200 text-sm">تأسيس المقر الأول وبداية نشاط تجميع وتداول مخلفات الكرتون والورق .</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 2 -->
+                <div class="relative pr-8 md:pr-10">
+                    <div class="absolute -right-3 top-1 w-6 h-6 rounded-full bg-lime-400 border-4 border-emerald-950 shadow-lg shadow-lime-400/50">
+</div>
+                    <div class="bg-glass-card p-6 rounded-2xl">
+                        <span class="text-gold-400 font-black text-xl mb-1 block">2017</span>
+                        <h3 class="text-lg font-bold text-white mb-2">التوسع في المكابس والتراخيص الرسمية</h3>
+                        <p class="text-emerald-200 text-sm">إدخال خطوط الكبس الهيدروليكي الحديثة والحصول على اعتمادات وزارة البيئة وهيئة التنمية الصناعية.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 3 -->
+                <div class="relative pr-8 md:pr-10">
+                    <div class="absolute -right-3 top-1 w-6 h-6 rounded-full bg-lime-400 border-4 border-emerald-950 shadow-lg shadow-lime-400/50">
+</div>
+                    <div class="bg-glass-card p-6 rounded-2xl">
+                        <span class="text-gold-400 font-black text-xl mb-1 block">2021</span>
+                        <h3 class="text-lg font-bold text-white mb-2">إضافة خدمات إعدام المستندات والأسطول الحديث</h3>
+                        <p class="text-emerald-200 text-sm">توسيع خدمات الإتلاف الآمن للمستندات السرية ومضاعفة أسطول الشاحنات لتغطية محافظات الجمهورية.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 4 -->
+                <div class="relative pr-8 md:pr-10">
+                    <div class="absolute -right-3 top-1 w-6 h-6 rounded-full bg-lime-400 border-4 border-emerald-950 shadow-lg shadow-lime-400/50">
+</div>
+                    <div class="bg-glass-card p-6 rounded-2xl">
+                        <span class="text-gold-400 font-black text-xl mb-1 block">اليوم</span>
+                        <h3 class="text-lg font-bold text-white mb-2">أكثر من 1050 شريك نجاح وتدوير +300 ألف طن</h3>
+                        <p class="text-emerald-200 text-sm">نحن اليوم اسم موثوق يمتلك ميزان بسكول معتمد، وتقارير استدامة معتمدة، وشراكات ممتدة مع كبرى المصانع.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why-us" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="px-3 py-1 rounded-md bg-lime-500/10 text-lime-400 font-bold text-sm border border-lime-500/20">لماذا تختارنا؟</span>
+                <h2 class="text-3xl sm:text-5xl font-black text-white mt-2">معايير تجعلنا الاختيار الأول</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-emerald-900/30 border border-emerald-800 p-6 rounded-2xl text-center hover:border-lime-400 transition-colors">
+                    <div class="w-16 h-16 rounded-2xl bg-emerald-800/80 text-lime-400 flex items-center justify-center text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-scale-balanced">
+</i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg mb-2">وزن دقيق وحقيقي</h3>
+                    <p class="text-emerald-300 text-xs">ميزان بسكول إلكتروني معتمد يضمن حقوق العميل بالكامل دون أدنى تلاعب.</p>
+                </div>
+
+                <div class="bg-emerald-900/30 border border-emerald-800 p-6 rounded-2xl text-center hover:border-lime-400 transition-colors">
+                    <div class="w-16 h-16 rounded-2xl bg-emerald-800/80 text-gold-400 flex items-center justify-center text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-coins">
+</i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg mb-2">أعلى سعر وأسرع سداد</h3>
+                    <p class="text-emerald-300 text-xs">نعدكم بتقديم أفضل أسعار شراء للمخلفات القابلة للتدوير مع خيارات السداد الفوري.</p>
+                </div>
+
+                <div class="bg-emerald-900/30 border border-emerald-800 p-6 rounded-2xl text-center hover:border-lime-400 transition-colors">
+                    <div class="w-16 h-16 rounded-2xl bg-emerald-800/80 text-lime-400 flex items-center justify-center text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-file-contract">
+</i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg mb-2">تراخيص بيئية رسمية</h3>
+                    <p class="text-emerald-300 text-xs">جميع تعاملاتنا موثقة بعقود رسمية وموافقة بيئية تحمي منشأتك من المخالفات.</p>
+                </div>
+
+                <div class="bg-emerald-900/30 border border-emerald-800 p-6 rounded-2xl text-center hover:border-lime-400 transition-colors">
+                    <div class="w-16 h-16 rounded-2xl bg-emerald-800/80 text-gold-400 flex items-center justify-center text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-headset">
+</i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg mb-2">دعم وفريق عمل متخصص</h3>
+                    <p class="text-emerald-300 text-xs">فريق عمل مدرب على السلامة والصحة المهنية (OSHA) واستجابة سريعة للطلبات.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT US & FORM SECTION -->
+    <section id="contact" class="py-24 bg-gradient-to-b from-emerald-950 via-emerald-900 to-emerald-950 border-t border-emerald-800/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Side -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="px-3 py-1 rounded-md bg-lime-500/10 text-lime-400 font-bold text-sm border border-lime-500/20">تواصل معنا</span>
+                        <h2 class="text-3xl sm:text-4xl font-black text-white mt-2">يسعدنا التعامل معكم واستقبال استفساراتكم</h2>
+                        <p class="text-emerald-200 text-sm mt-3">تواصل معنا اليوم للحصول على استشارة بيئية أو طلب معاينة مجانية لمخلفات مصنعك.</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-900 border border-lime-500/30 flex items-center justify-center text-lime-400 shrink-0 text-xl">
+                                <i class="fa-solid fa-location-dot">
+</i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">المقر والساحة المركزية:</h4>
+                                <p class="text-emerald-300 text-sm">الشرقية - مدينة بلبيس - بجوار شركة سيكم للأعشاب</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-900 border border-lime-500/30 flex items-center justify-center text-lime-400 shrink-0 text-xl">
+                                <i class="fa-solid fa-phone">
+</i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">أرقام التواصل :</h4>
+                                <p class="text-emerald-300 text-sm" dir="ltr">+20 128 917 1593 / +20 128 898 4719</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-900 border border-lime-500/30 flex items-center justify-center text-lime-400 shrink-0 text-xl">
+                                <i class="fa-solid fa-envelope">
+</i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">البريد الإلكتروني:</h4>
+                                <p class="text-emerald-300 text-sm">info@elakhwa_elmothadon.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct WhatsApp Button -->
+                    <a href="https://wa.me/201289171593" target="_blank" class="inline-flex items-center justify-center gap-3 w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-colors">
+                        <i class="fa-brands fa-whatsapp text-2xl">
+</i>
+                        <span>محادثة فورية عبر الواتساب</span>
+                    </a>
+                </div>
+
+                <!-- Form Side -->
+                <div class="lg:col-span-7">
+                    <div class="bg-glass-card p-8 rounded-3xl border border-emerald-700/50 relative">
+                        <h3 class="text-2xl font-bold text-white mb-6">طلب عرض سعر / طلب خدمة</h3>
+                        
+                        <!-- Success Message Alert -->
+                        <div id="form-success" class="hidden mb-6 p-4 rounded-xl bg-lime-500/20 border border-lime-500 text-lime-300 text-sm flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-2xl">
+</i>
+
+    <!-- CONTACT SECTION WITH FORM -->
+    <section id="contact" class="py-24 bg-emerald-950/40 relative">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-glass-card rounded-3xl p-8 sm:p-12 border border-emerald-700/50 shadow-2xl">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl sm:text-4xl font-black text-white mb-2">طلب عرض سعر / طلب خدمة</h2>
+                    <p class="text-emerald-300 text-sm">املأ النموذج أدناه وسيتم تحويلك مباشرة لمراسلتنا عبر الواتساب</p>
+                </div>
+
+                <form id="contact-form" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-emerald-200 text-xs font-bold mb-1">الاسم بالكامل *</label>
+                            <input type="text" id="form-name" required placeholder="أدخل اسمك" class="w-full bg-emerald-950 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-lime-400">
+                        </div>
+                        <div>
+                            <label class="block text-emerald-200 text-xs font-bold mb-1">رقم الهاتف / الواتساب *</label>
+                            <input type="tel" id="form-phone" required placeholder="01xxxxxxxxx" class="w-full bg-emerald-950 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-lime-400">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-emerald-200 text-xs font-bold mb-1">اسم الشركة / المصنع</label>
+                            <input type="text" id="form-company" placeholder="اسم المنشأة إن وجد" class="w-full bg-emerald-950 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-lime-400">
+                        </div>
+                        <div>
+                            <label class="block text-emerald-200 text-xs font-bold mb-1">الخدمة المطلوبة *</label>
+                            <select id="form-service" required class="w-full bg-emerald-950 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-lime-400">
+                                <option value="">اختر الخدمة...</option>
+                                <option value="recycling">تدوير كرتون وورق وبلاستيك</option>
+                                <option value="waste-mgmt">إدارة مخلفات مصنع بالكامل</option>
+                                <option value="destruction">إعدام مستندات أو مواد تالفة</option>
+                                <option value="buying">بيع مخلفات وسكراب للشركة</option>
+                                <option value="transport">خدمات النقل والتجميع</option>
+                                <option value="hazardous">التخلص الآمن من المخلفات الخطرة</option>
+                                <option value="water">التخلص الآمن من مياه الصرف الصناعي</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-emerald-200 text-xs font-bold mb-1">تفاصيل الطلب / الكميات التقديرية</label>
+                        <textarea id="form-message" rows="4" placeholder="اذكر نوع المخلفات، الكميات المتوقعة، أو مكان التجميع..." class="w-full bg-emerald-950 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-lime-400"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full btn-gradient text-emerald-950 font-black py-4 rounded-xl text-base shadow-xl flex items-center justify-center gap-2 cursor-pointer">
+                        <span>إرسال الطلب عبر الواتساب</span>
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-emerald-950 text-emerald-300 text-sm border-t border-emerald-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+            <p class="text-xs text-emerald-400">
+                جميع الحقوق محفوظة © <span id="current-year"></span> لمؤسسة <strong>الاخوه المتحدون للخدمات البيئية</strong>.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR WHATSAPP SUBMISSION -->
+    <script>
+        // ضبط السنة الحالية تلقائياً
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // كود معالجة النموذج وتوجيه البيانات للواتساب مباشرة بدون رسائل وهمية
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // منع إعادة تحميل الصفحة
+
+            // قراءة القيم المدخلة
+            const name = document.getElementById('form-name').value.trim();
+            const phone = document.getElementById('form-phone').value.trim();
+            
+            const companyInput = document.getElementById('form-company');
+            const company = (companyInput && companyInput.value.trim()) ? companyInput.value.trim() : 'غير محدد';
+            
+            const serviceSelect = document.getElementById('form-service');
+            const serviceText = (serviceSelect && serviceSelect.selectedIndex > 0) ? serviceSelect.options[serviceSelect.selectedIndex].text : 'غير محدد';
+            
+            const messageInput = document.getElementById('form-message');
+            const details = (messageInput && messageInput.value.trim()) ? messageInput.value.trim() : 'لا يوجد تفاصيل إضافية';
+
+            // رقم الواتساب الخاص بك
+            const whatsappNumber = "201289171593"; 
+
+            // صياغة نص الرسالة بشكل منسق وجاهز
+            const textMessage = `*طلب خدمة جديد من الموقع البيئي*%0A` +
+                                `--------------------------------%0A` +
+                                `👤 *الاسم:* ${encodeURIComponent(name)}%0A` +
+                                `📱 *رقم الهاتف:* ${encodeURIComponent(phone)}%0A` +
+                                `🏢 *الشركة/المصنع:* ${encodeURIComponent(company)}%0A` +
+                                `🛠️ *الخدمة المطلوبة:* ${encodeURIComponent(serviceText)}%0A` +
+                                `📝 *التفاصيل:* ${encodeURIComponent(details)}`;
+
+            // فتح تطبيق أو موقع الواتساب فوراً برسالته
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${textMessage}`;
+            window.open(whatsappURL, '_blank');
+        <!-- FOOTER -->
+    <footer class="bg-emerald-950 text-emerald-300 text-sm border-t border-emerald-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                
+                <!-- Col 1: About -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-lime-400 text-emerald-950 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-recycle">
+</i>
+                        </div>
+                        <span class="text-lg font-black text-white">مؤسسة الاخوه المتحدون للخدمات البيئية</span>
+                    </div>
+                    <p class="text-xs text-emerald-400/90 leading-relaxed">
+                        شركة مصرية معتمدة ومتخصصة في تقديم أحدث الحلول المستدامة لإدارة وإعادة تدوير المخلفات الصناعية والصلبة وفق الشروط والمعايير البيئية.
+                    </p>
+                    <div class="flex items-center gap-3 text-lg pt-2">
+                        <a href="#" class="w-8 h-8 rounded-full bg-emerald-900 hover:bg-lime-400 hover:text-emerald-950 flex items-center justify-center transition-colors"><i class="fa-brands fa-facebook-f">
+</i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-emerald-900 hover:bg-lime-400 hover:text-emerald-950 flex items-center justify-center transition-colors"><i class="fa-brands fa-linkedin-in">
+</i></a>
+                        <a href="https://wa.me/201289171593" class="w-8 h-8 rounded-full bg-emerald-900 hover:bg-lime-400 hover:text-emerald-950 flex items-center justify-center transition-colors"><i class="fa-brands fa-whatsapp">
+</i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-4 border-b border-emerald-800 pb-2">روابط السريعة</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#about" class="hover:text-lime-400 transition-colors">من نحن</a></li>
+                        <li><a href="#services" class="hover:text-lime-400 transition-colors">خدماتنا الشاملة</a></li>
+                        <li><a href="#calculator" class="hover:text-lime-400 transition-colors">حاسبة التدوير والأثر البيئي</a></li>
+                        <li><a href="#gallery" class="hover:text-lime-400 transition-colors">معرض العمليات والساحة</a></li>
+                        <li><a href="#contact" class="hover:text-lime-400 transition-colors">طلب عرض سعر</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Certifications -->
+                <div>
+                    <h4 class="text-white font-bold mb-4 border-b border-emerald-800 pb-2">التراخيص والاعتمادات</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-lime-400">
+</i> وزارة البيئة المصرية (WMRA)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-lime-400">
+</i> هيئة التنمية الصناعية (IDA)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-lime-400">
+</i> موافقة حماية البيئة والتنمية المستدامة</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-lime-400">
+</i> السجل التجاري والبطاقة الضريبية</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Location Map info -->
+                <div>
+                    <h4 class="text-white font-bold mb-4 border-b border-emerald-800 pb-2">العنوان والفرع الرئيسي</h4>
+                    <p class="text-xs text-emerald-300 mb-3">جمهورية مصر العربية - محافظة الشرقية - مدينة بلبيس - بجوار شركة سيكم للأعشاب.</p>
+                    <div class="p-3 bg-emerald-900/50 rounded-xl border border-emerald-800 text-xs">
+                        <i class="fa-solid fa-clock text-gold-400 ml-1">
+</i> ساعات العمل: <br> السبت - الخميس: 8:00 صباحاً - 5:00 مساءً
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-emerald-900 mt-12 pt-6 text-center text-xs text-emerald-400">
+                جميع الحقوق محفوظة © <span id="current-year"></span> لـ <strong>الاخوه المتحدون  للخدمات البيئية ( Environmental Services)</strong>.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // RECYCLING IMPACT CALCULATOR LOGIC
+        const calcMaterial = document.getElementById('calc-material');
+        const calcWeight = document.getElementById('calc-weight');
+        const weightDisplay = document.getElementById('weight-display');
+        const co2Result = document.getElementById('co2-result');
+        const treesResult = document.getElementById('trees-result');
+        const energyResult = document.getElementById('energy-result');
+
+        // Material factors per KG: [CO2 saved (kg), Trees saved factor, kWh energy]
+        const factors = {
+            paper: { co2: 1.5, trees: 0.025, energy: 4.0 },
+            plastic: { co2: 2.0, trees: 0.010, energy: 5.5 },
+            scrap: { co2: 1.2, trees: 0.005, energy: 3.2 }
+        };
+
+        function updateCalculator() {
+            const weight = parseInt(calcWeight.value);
+            const material = calcMaterial.value;
+            const factor = factors[material];
+
+            weightDisplay.textContent = weight.toLocaleString('ar-EG') + ' كجم';
+
+            const co2 = Math.round(weight * factor.co2);
+            const trees = Math.round(weight * factor.trees);
+            const energy = Math.round(weight * factor.energy);
+
+            co2Result.textContent = co2.toLocaleString('ar-EG');
+            treesResult.textContent = trees.toLocaleString('ar-EG');
+            energyResult.textContent = energy.toLocaleString('ar-EG') + ' كيلوواط/ساعة';
+        }
+
+        calcWeight.addEventListener('input', updateCalculator);
+        calcMaterial.addEventListener('change', updateCalculator);
+        updateCalculator(); // Initial calculation on page load
+
+        // GALLERY FILTER LOGIC
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-lime-500', 'text-emerald-950');
+                    b.classList.add('bg-emerald-900/60', 'text-emerald-200');
+                });
+                btn.classList.remove('bg-emerald-900/60', 'text-emerald-200');
+                btn.classList.add('bg-lime-500', 'text-emerald-950');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }); // CONTACT FORM SUBMISSION DEMO
+        const contactForm = document.getElementById('contact-form');
+        const formSuccess = document.getElementById('form-success');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Show dynamic success banner
+            formSuccess.classList.remove('hidden');
+            contactForm.reset();
+            
+            // Scroll to success banner smoothly
+            formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+    </script>
+<!-- كود ربط النموذج بالواتساب -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // البحث عن النموذج بطرق مختلفة لضمان عمله فوراً
+    const form = document.querySelector('form') || document.getElementById('contact-form');
+    
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // منع إعادة تحميل الصفحة
+
+            // قراءة البيانات المكتوبة في الحقول
+            const inputs = form.querySelectorAll('input, select, textarea');
+            let name = '', phone = '', company = '', service = '', messageText = '';
+
+            inputs.forEach(input => {
+                const placeholder = (input.placeholder || '').toLowerCase();
+                const id = (input.id || '').toLowerCase();
+                const type = input.type;
+
+                if (type === 'tel' || id.includes('phone') || placeholder.includes('هاتف') || placeholder.includes('رقم')) {
+                    phone = input.value;
+                } else if (input.tagName === 'SELECT' || id.includes('service')) {
+                    service = input.value;
+                } else if (input.tagName === 'TEXTAREA' || id.includes('message') || id.includes('details')) {
+                    messageText = input.value;
+                } else if (id.includes('company') || placeholder.includes('شركة') || placeholder.includes('مصنع')) {
+                    company = input.value;
+                } else if (type === 'text' && !name) {
+                    name = input.value;
+                }
+            });
+
+            // رقم الواتساب الخاص بك
+            const whatsappNumber = "201289171593"; 
+
+            // تجهيز نص الرسالة
+            const fullMessage = `*طلب خدمة جديد من الموقع البيئي*%0A` +
+                                `--------------------------------%0A` +
+                                `👤 *الاسم:* ${encodeURIComponent(name || 'غير محدد')}%0A` +
+                                `📱 *رقم الهاتف:* ${encodeURIComponent(phone || 'غير محدد')}%0A` +
+                                `🏢 *الشركة/المصنع:* ${encodeURIComponent(company || 'غير محدد')}%0A` +
+                                `🛠️ *الخدمة المطلوبة:* ${encodeURIComponent(service || 'غير محدد')}%0A` +
+                                `📝 *التفاصيل:* ${encodeURIComponent(messageText || 'لا يوجد تفاصيل إضافية')}`;
+
+            // فتح الواتساب فوراً
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${fullMessage}`;
+            window.open(whatsappURL, '_blank');
+        });
+    }
+});
+<script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // منع إعادة تحميل الصفحة
+
+            // قراءة البيانات المكتوبة في الحقول
+            const name = document.getElementById('form-name').value.trim();
+            const phone = document.getElementById('form-phone').value.trim();
+            const companyInput = document.getElementById('form-company');
+            const company = (companyInput && companyInput.value.trim()) ? companyInput.value.trim() : 'غير محدد';
+            
+            const serviceSelect = document.getElementById('form-service');
+            const serviceText = serviceSelect ? serviceSelect.options[serviceSelect.selectedIndex].text : 'غير محدد';
+            
+            const messageInput = document.getElementById('form-message');
+            const details = (messageInput && messageInput.value.trim()) ? messageInput.value.trim() : 'لا يوجد تفاصيل إضافية';
+
+            // رقم الواتساب الخاص بك
+            const whatsappNumber = "201289171593"; 
+
+            // صياغة الرسالة
+            const textMessage = `*طلب خدمة جديد من الموقع البيئي*%0A` +
+                                `--------------------------------%0A` +
+                                `👤 *الاسم:* ${encodeURIComponent(name)}%0A` +
+                                `📱 *رقم الهاتف:* ${encodeURIComponent(phone)}%0A` +
+                                `🏢 *الشركة/المصنع:* ${encodeURIComponent(company)}%0A` +
+                                `🛠️ *الخدمة المطلوبة:* ${encodeURIComponent(serviceText)}%0A` +
+                                `📝 *التفاصيل:* ${encodeURIComponent(details)}`;
+
+            // فتح الواتساب
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${textMessage}`;
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+ <!-- CONTACT SECTION WITH FORM -->
+    <section id="contact" class="py-24 bg-emerald-950/40 relative">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-glass-card rounded-3xl p-8 sm:p-12 border border-emerald-700/50 shadow-2xl">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl sm:text-4xl font-black text-white mb-2">طلب عرض سعر / طلب خدمة</h2>
+                    <p class="text-emerald-300 text-sm">املأ النموذج أدناه وسيتم تحويلك مباشرة لمراسلتنا عبر الواتساب</p>
+                </div>
+
+                <form id="contact-form" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-emerald-200 text-xs font-bold mb-1">الاسم بالكامل *</label>
+                            <input type="text" id="form-name" required placeholder="أدخل اسمك" class="w-full bg-emerald-950 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-lime-400">
+                        </div>
+                        <div>
+                            <label class="block text-emerald-200 text-xs font-bold mb-1">رقم الهاتف / الواتساب *</label>
+                            <input type="tel" id="form-phone" required placeholder="01xxxxxxxxx" class="w-full bg-emerald-950 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-lime-400">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-emerald-200 text-xs font-bold mb-1">اسم الشركة / المصنع</label>
+                            <input type="text" id="form-company" placeholder="اسم المنشأة إن وجد" class="w-full bg-emerald-950 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-lime-400">
+                        </div>
+                        <div>
+                            <label class="block text-emerald-200 text-xs font-bold mb-1">الخدمة المطلوبة *</label>
+                            <select id="form-service" required class="w-full bg-emerald-950 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-lime-400">
+                                <option value="">اختر الخدمة...</option>
+                                <option value="recycling">تدوير كرتون وورق وبلاستيك</option>
+                                <option value="waste-mgmt">إدارة مخلفات مصنع بالكامل</option>
+                                <option value="destruction">إعدام مستندات أو مواد تالفة</option>
+                                <option value="buying">بيع مخلفات وسكراب للشركة</option>
+                                <option value="transport">خدمات النقل والتجميع</option>
+                                <option value="hazardous">التخلص الآمن من المخلفات الخطرة</option>
+                                <option value="water">التخلص الآمن من مياه الصرف الصناعي</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-emerald-200 text-xs font-bold mb-1">تفاصيل الطلب / الكميات التقديرية</label>
+                        <textarea id="form-message" rows="4" placeholder="اذكر نوع المخلفات، الكميات المتوقعة، أو مكان التجميع..." class="w-full bg-emerald-950 border border-emerald-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-lime-400"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full btn-gradient text-emerald-950 font-black py-4 rounded-xl text-base shadow-xl flex items-center justify-center gap-2 cursor-pointer">
+                        <span>إرسال الطلب عبر الواتساب</span>
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-emerald-950 text-emerald-300 text-sm border-t border-emerald-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+            <p class="text-xs text-emerald-400">
+                جميع الحقوق محفوظة © <span id="current-year"></span> لمؤسسة <strong>الاخوه المتحدون للخدمات البيئية</strong>.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR WHATSAPP SUBMISSION -->
+    <script>
+        // ضبط السنة الحالية تلقائياً
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // كود معالجة النموذج وتوجيه البيانات للواتساب مباشرة بدون رسائل وهمية
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // منع إعادة تحميل الصفحة
+
+            // قراءة القيم المدخلة
+            const name = document.getElementById('form-name').value.trim();
+            const phone = document.getElementById('form-phone').value.trim();
+            
+            const companyInput = document.getElementById('form-company');
+            const company = (companyInput && companyInput.value.trim()) ? companyInput.value.trim() : 'غير محدد';
+            
+            const serviceSelect = document.getElementById('form-service');
+            const serviceText = (serviceSelect && serviceSelect.selectedIndex > 0) ? serviceSelect.options[serviceSelect.selectedIndex].text : 'غير محدد';
+            
+            const messageInput = document.getElementById('form-message');
+            const details = (messageInput && messageInput.value.trim()) ? messageInput.value.trim() : 'لا يوجد تفاصيل إضافية';
+
+            // رقم الواتساب الخاص بك
+            const whatsappNumber = "201289171593"; 
+
+            // صياغة نص الرسالة بشكل منسق وجاهز
+            const textMessage = `*طلب خدمة جديد من الموقع البيئي*%0A` +
+                                `--------------------------------%0A` +
+                                `👤 *الاسم:* ${encodeURIComponent(name)}%0A` +
+                                `📱 *رقم الهاتف:* ${encodeURIComponent(phone)}%0A` +
+                                `🏢 *الشركة/المصنع:* ${encodeURIComponent(company)}%0A` +
+                                `🛠️ *الخدمة المطلوبة:* ${encodeURIComponent(serviceText)}%0A` +
+                                `📝 *التفاصيل:* ${encodeURIComponent(details)}`;
+
+            // فتح تطبيق أو موقع الواتساب فوراً برسالته
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${textMessage}`;
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
